@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Sentiment Analyzer</title>
+</head>
+<body>
+    <h2>🧠 AI Sentiment Analyzer</h2>
+
+    <form method="post">
+        <input type="text" name="text" placeholder="Enter text" required>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
